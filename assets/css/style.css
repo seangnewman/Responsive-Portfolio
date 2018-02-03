@@ -100,11 +100,13 @@ main{
     float:left;
     overflow: hidden;
 }
+     
 
 #aboutMeContainer{
     margin: 1rem;
     height: auto;
-    max-width:650px;
+     
+   
  }
 
 #aboutMeContainer header{
@@ -136,6 +138,7 @@ main{
 #aboutMeContent p{
     font-size: 1rem;
     margin : 0.5rem;
+
 }
  
 aside{
@@ -292,11 +295,48 @@ footer{
 
 /* *************************************** */
 @media only screen and (max-width:980px){
-   
+    #imageContainer{
+        display: block;
+        width:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 25rem;
+    }
 }
 /* General Tablet Size */    
 @media only screen and (max-width:768px){
-   
+     
+    
+#imageContainer{
+    height: 5rem;
+    width: 5rem;
+    background-size: contain;
+    float: left;
+    position: relative;
+    top:0;
+     
+    }
+
+    #aboutMe{
+        width: 80%;
+        
+    }
+
+    #aboutMeContainer{
+        margin: 0.5rem;
+    }
+
+    aside{
+        margin: 0;
+        width:100%;
+        
+    }
+
+    
+ 
+
+    
+ 
 }
 
 /* General Phone in Landscape Size */    
