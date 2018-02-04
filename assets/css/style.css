@@ -302,6 +302,71 @@ footer{
         background-size: 100% 100%;
         height: 25rem;
     }
+
+    #aboutMe{
+        margin-left:2rem;
+        width:50%;
+        
+    }
+
+    aside{
+        width:35%;
+    }
+    .portfolioContainer{
+       
+         
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .portfolioImageContainer{
+        width: 100%;
+        height: auto;
+        float:none;
+        overflow: visible;
+    }
+    .portfolioImageContainer img{
+        margin: 0 auto;
+        width: 100%;
+        height:auto;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+    }
+
+    header{
+        width:40%;
+       
+    }
+
+    nav{
+        width:35%;
+        float: right;
+         
+         
+    }
+    #nameHighlight{
+        width:100%;
+    }
+    #headings h1{
+        font-size: 1.rem;
+        width: 95%;
+    }
+
+    #headings{
+        width:90%;
+        margin-left: 2rem;
+        
+         
+    }
+
+    main{
+        width:100%;
+        margin-top: 1rem;
+    }
+    
+    
 }
 /* General Tablet Size */    
 @media only screen and (max-width:768px){
@@ -319,7 +384,7 @@ footer{
 
     #aboutMe{
         width:100%;
-        margin: 0;
+        margin-left: 2rem;;
     }
 
     #aboutMeContainer{
@@ -328,7 +393,7 @@ footer{
     }
 
     aside{
-        margin : 1rem 0 1rem 0;
+        margin : 1rem 0 1rem 2rem;
         width:100%;
     }
 
@@ -341,12 +406,12 @@ footer{
         justify-content: left;
     }
     header{
-        width:45%;
+        width:55%;
     }
 
     nav{
-        width:50%;
-        text-align: right;
+        width:35%;
+        text-align: left;
     }
     #nameHighlight{
         width:100%;
@@ -389,8 +454,26 @@ footer{
     top: 0;
     z-index: 5;
    }
- 
 
+   .portfolioContainer{
+       
+         
+    flex-direction: row-reverse;
+    width: 100%;
+    
+}
+.portfolioImageContainer{
+    width: 45%;
+    height: 33%;
+    float:left;
+    overflow: hidden;
+}
+.portfolioImageContainer img{
+    margin: 0 auto;
+    width: 100%;
+    height:auto;
+     
+}
  
 }
 
@@ -435,6 +518,26 @@ footer{
    width: 30%;
    font-weight: bold;
    }
+
+   .portfolioContainer{
+       
+         
+    flex-direction: column;
+    width: 100%;
+    
+}
+.portfolioImageContainer{
+    width: 100%;
+    height: auto;
+    float:none;
+    overflow: visible;
+}
+.portfolioImageContainer img{
+    margin: 0 auto;
+    width: 100%;
+    height:auto;
+    height: auto;
+}
  
 }
 
