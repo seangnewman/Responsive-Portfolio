@@ -308,8 +308,8 @@ footer{
      
     
 #imageContainer{
-    height: 5rem;
-    width: 5rem;
+    height: 10rem;
+    width:  10rem;
     background-size: contain;
     float: left;
     position: relative;
@@ -318,24 +318,89 @@ footer{
     }
 
     #aboutMe{
-        width: 80%;
+       
+         
+        width:100%;
+        margin: 0;
         
     }
 
     #aboutMeContainer{
         margin: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     aside{
-        margin: 0;
+        margin : 1rem 0 1rem 0;
         width:100%;
         
     }
 
-    
+    #connectWithMeContainer{
+         
+        text-align: left;
+        margin-left: .5rem;
+    }
  
+    #socialMediaContainer{
+   
+        justify-content: left;
+    }
+    header{
+        width:45%;
+         
+    }
+
+    nav{
+        width:50%;
+        text-align: right;
+         
+    }
+    #nameHighlight{
+        width:100%;
+    }
+    #headings h1{
+        font-size: 1.25rem;
+        width: 100%;
+       
+    }
+
+    #headings{
+        width:100%;
+        
+    }
+
+    main{
+        width:100%;
+        margin-top: 4.625rem;
+    }
+
+    button{
+        font-size:.75rem;
+        margin:0 .125rem 0 0;
+    }
+
+    #about, #portfolio, #contact{
+        padding: .125rem .250rem;
+        
+    }
+    footer{
+        width: 100%;
+    }
 
     
+#siteNavigation li{
+  
+    margin: .125rem 0 .125rem 0;
+   }
+
+   #headings{
+    height: 3.625rem;
+    position:fixed;
+    top: 0;
+   }
+ 
+
  
 }
 
