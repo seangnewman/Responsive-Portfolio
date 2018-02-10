@@ -34,7 +34,10 @@ body{
      width:960px;
      border-bottom: .1rem solid #cccccc;
      margin: 0 auto;
+     
  }
+
+
 
  #about, #portfolio, #contact {
     background-color:transparent;
@@ -48,7 +51,18 @@ body{
  
  header{
      width:71.850%;
-     float:left;
+     width:100%;
+     
+ }
+
+ header h2{
+     font-size:1.50rem;
+     color:#4AAAA5;
+
+     margin-top:1rem;
+     padding-bottom: 0.5rem;
+     border-bottom: .15rem solid #4AAAA5 ;
+     margin-bottom: 1rem;
  }
  
  #nameHighlight{
@@ -67,17 +81,19 @@ body{
 
   nav{
     width:28.125%;
-    float:left;
+    float:right;
     text-align: left;
     font-size: 1.125rem;
     padding: 0;
     margin-top:1.25rem;
+     
 }
  
 #siteNavigation li{
    list-style: none;
    display: inline-block;
    margin: .125rem .125rem .125rem 0;
+   
   }
 
   button{
@@ -93,7 +109,7 @@ main{
 }
 
 #aboutMe{
-    margin: 1rem 1.20rem 1rem 0rem;
+    margin: 1rem  .5rem 1rem 0rem;
     width: 40.625rem;
     border:.1rem solid #FFFFFF;
     background-color: #ffffff;
@@ -115,11 +131,14 @@ main{
     width: 100%;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
+    margin: 1rem 0 0.5 rem 1rem;
 }
 
-#aboutMeContainer header h2{
+header h2{
     font-weight: bold;
     margin-bottom: .25rem;
+    border-bottom: .15rem solid #E9E7E7 ;
+    
   }
 
 #imageContainer{
@@ -128,6 +147,7 @@ main{
     background-color: black;
     background-image: url("https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAgkAAAAJGFkNDI0NGU0LTg0ZWMtNGMxMy1hOTU0LWY0NjNhNzAyOTYyZQ.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     float: left;
     position: relative;
     top:0;
@@ -157,6 +177,7 @@ aside{
 }
 
 #connectWithMeContainer h3{
+    margin-top:1rem;
     padding-bottom: 0.5rem;
     border-bottom: .15rem solid #e9e7e7 ;
     margin-bottom: 0.5rem;
@@ -183,12 +204,14 @@ footer{
     color:whitesmoke;
     height: 4rem;
     margin: 0 auto;
+    
 }
  
 #copyTag{
     position: relative;
     top: 40%;
     opacity: 0.5rem;
+    width:100%
 }
 /* *************************************** */
 /* Portfolio Page                          */
@@ -294,251 +317,264 @@ footer{
 /* close commented backslash hack */
 
 /* *************************************** */
-@media only screen and (max-width:980px){
-    #imageContainer{
-        display: block;
-        width:100%;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 25rem;
-    }
-
-    #aboutMe{
-        margin-left:2rem;
-        width:50%;
-        
-    }
-
-    aside{
-        width:35%;
-    }
-    .portfolioContainer{
-       
-         
-        flex-direction: column;
-        width: 100%;
-        
-    }
-    .portfolioImageContainer{
-        width: 100%;
-        height: auto;
-        float:none;
-        overflow: visible;
-    }
-    .portfolioImageContainer img{
+@media only screen and (max-width:980px) and (min-width: 769px){
+    
+    
+    
+    body{
         margin: 0 auto;
+    }
+    main {
+        margin: 4rem;
         width: 100%;
-        height:auto;
-        height: auto;
-    }
-    footer{
-        width: 100%;
-    }
-
-    header{
-        width:40%;
-       
-    }
-
-    nav{
-        width:35%;
-        float: right;
-         
-         
-    }
-    #nameHighlight{
-        width:100%;
-    }
-    #headings h1{
-        font-size: 1.rem;
-        width: 95%;
     }
 
     #headings{
-        width:90%;
-        margin-left: 2rem;
+        height: 4.25rem;
+        background-color: whitesmoke;
+        width:100%;
+        border-bottom: .1rem solid #cccccc;
+        margin: 0 auto;
         
-         
+    }
+   
+
+    header{
+        width:50%;
+    }
+    nav{
+        width: 45%;
     }
 
-    main{
-        width:100%;
-        margin-top: 1rem;
+    header h1{
+        font-size: 1.35rem;
     }
-    
-    
+ 
+    #aboutMe{
+        margin: 1rem  .5rem 1rem 0rem;
+        width: 100%;
+       
+    }
+
+    aside{
+        float:left;
+        margin:0;
+        width:100%;
+        display:block;
+    }
+    #footerSection{
+        width:100%;
+        margin-top:-4rem;
+        margin-left: 4rem;
+    }
+    footer{
+        width:100%;
+    }
+
 }
 /* General Tablet Size */    
-@media only screen and (max-width:768px){
-     
+@media only screen and (max-width:768px) and (min-width:641px){
+ 
+  
+    
     
 #imageContainer{
-    height: 10rem;
-    width:  10rem;
+    height: 5rem;
+    width: 5rem;
     background-size: contain;
     float: left;
     position: relative;
     top:0;
      
     }
-
+    main {
+        margin:0;
+        width: 100%;
+    }
     #aboutMe{
-        width:100%;
-        margin-left: 2rem;;
+        width: 95%;
+        
     }
 
     #aboutMeContainer{
-        margin: 0.5rem;
-        margin-bottom: 1rem;
+       margin:0;
+       
     }
 
     aside{
-        margin : 1rem 0 1rem 2rem;
-        width:100%;
+        margin: 0;
+        width:95%;
+        display:block;
+        float:left;
     }
 
     #connectWithMeContainer{
         text-align: left;
         margin-left: .5rem;
     }
- 
+
     #socialMediaContainer{
         justify-content: left;
+        margin-left:.5rem;
     }
-    header{
-        width:55%;
+    
+    #nameHighlight{
+       font-size:1.25rem;
+       width:100%;  
+       
+    }
+    button{
+        font-size: .75rem;
+        
     }
 
     nav{
-        width:35%;
-        text-align: left;
+        width:65%;
+        float:right;
     }
-    #nameHighlight{
-        width:100%;
+    #siteNavigation{
+        float:right;
     }
-    #headings h1{
-        font-size: 1.25rem;
-        width: 100%;
-    }
-
-    #headings{
-        width:100%;
+    header{
+        width: 35%;
     }
 
-    main{
-        width:100%;
-        margin-top: 4.625rem;
-    }
-
-    button{
-        font-size:.75rem;
-        margin:0 .125rem 0 0;
-    }
-
-    #about, #portfolio, #contact{
-        padding: .125rem .250rem;
-    }
     footer{
         width: 100%;
+        margin:0;
     }
 
-    
-    #siteNavigation li{
-  
-        margin: .125rem 0 .125rem 0;
+    #footerSection{
+        width:100%;
     }
 
-   #headings{
-    height: 3.625rem;
-    position:fixed;
-    top: 0;
-    z-index: 5;
-   }
-
-   .portfolioContainer{
-       
-         
-    flex-direction: row-reverse;
-    width: 100%;
-    
-}
-.portfolioImageContainer{
-    width: 45%;
-    height: 33%;
-    float:left;
-    overflow: hidden;
-}
-.portfolioImageContainer img{
-    margin: 0 auto;
-    width: 100%;
-    height:auto;
-     
-}
+    nav{
+        float:left;
+    }
  
 }
 
 /* General Phone in Landscape Size */    
 @media only screen and (max-width:640px){
+
+   
+main{
+    width:100%;
+    margin:0 auto;
+} 
+  
+  
     
-        
+    
 #imageContainer{
-    height: 25rem;
-    width:  100%;
-    background-size: cover;
-    float: none;
-    
+    height: 20rem;
+    width: 100%;
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+    top:0;
      
     }
-
-    #headings{
-        height: 5.5rem;
+     
+    #aboutMe{
+        width: 100%;
+        overflow: visible;
         
+        
+    }
+
+    #aboutMeContainer{
+       margin:0;
+       width:100%;
+       
+       
+    }
+
+    aside{
+        margin: 0;
+        width:95%;
+        display:block;
+        float:left;
+    }
+
+    #connectWithMeContainer{
+        text-align: left;
+        margin-left: .5rem;
+    }
+
+    #socialMediaContainer{
+        justify-content: left;
+        margin-left:.5rem;
+    }
+    
+    #nameHighlight{
+       font-size:1.25rem;
+       width:100%;  
+       
+    }
+    button{
+        font-size: .75rem;
+        
+    }
+
+    nav{
+        width:100%;
+        float:right;
+        text-align: center;
+        margin-top:0;
+        margin-bottom: 2rem;
+    }
+    #siteNavigation{
+        align-content: center;
+        background-color: #FFFFFF; 
+      
     }
     header{
         width: 100%;
-        margin-bottom: 0;
-        height: 2.5rem;
-     
+         
     }
-    nav{
+
+    footer{
+        width: 100%;
+        margin:0;
+    }
+
+    #footerSection{
         width:100%;
-        height: 1rem;
-         
-        text-align: center; 
     }
 
-    main{
-       
-        margin-top: 6.625rem;
+    #aboutMeContainer{
+        width:100%;
     }
 
-     
-#siteNavigation li{
-    
-   width: 30%;
-   font-weight: bold;
-   }
+    #headings{
+        height: 4.25rem;
+        background-color: whitesmoke;
+        width:100%;
+        border-bottom: .1rem solid #cccccc;
+        margin: 0 auto;
+        
+    }
 
-   .portfolioContainer{
-       
-         
-    flex-direction: column;
+.portfolioContainer{
     width: 100%;
-    
+    height: auto;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
 }
 .portfolioImageContainer{
-    width: 100%;
-    height: auto;
-    float:none;
-    overflow: visible;
-}
-.portfolioImageContainer img{
+    width:100%;
     margin: 0 auto;
-    width: 100%;
-    height:auto;
-    height: auto;
-}
- 
+    
 }
 
+   
     
+ 
+
+    
+ 
+}
